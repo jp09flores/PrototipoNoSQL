@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Nuevo";
+}
+
+<div class="container">
+    <div class="row justify-content-center" style="margin-top:5%">
+        <div class="col-xl-10 col-lg-12 col-md-9">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-3 d-none d-lg-block"></div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h3 class="h4 text-gray-900 mb-4">Registrar Usuario</h3>
+                                </div>
+
+
+                                <div style="display:flex;align-content:center;justify-content:center">
+                                    <form action="/Home/Nuevo" method="post">
+                                        <div class="form-group my-2">
+                                            <input class="form-control form-control-user" id="Cedula" name="Cedula" placeholder="Ejemplo" required="true" type="text" value="" />
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <input class="form-control form-control-user" id="Nombre" name="Nombre" placeholder="Ejemplo" required="true" type="text" value="" />
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <input class="form-control form-control-user" id="ApellidoP" name="ApellidoP" placeholder="Ejemplo" required="true" type="text" value="" />
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <input class="form-control form-control-user" id="ApellidoM" name="ApellidoM" placeholder="Ejemplo" required="true" type="text" value="" />
+                                        </div>
+                                       
+                                        <div class="form-group my-2">
+                                            <select class="form-control form-control-user" id="Genero" name="Genero" required="true">
+                                                <option value="">Seleccione un g&#233;nero</option>
+                                                <option value="Ejemplo">Ejemplo</option>
+                                                <option value="Ejemplo2">Ejemplo2</option>
+                                            </select>
+                                        </div>
+                                       
+                                        <a href="@Url.Action("Index","Home")" class="btn btn-primary btn-user btn-block" >Procesar</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

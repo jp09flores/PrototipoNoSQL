@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Clientes";
+}
+
+<div style="margin: 20px  50px ">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Productos</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12">
+
+
+                            <a class="btn btn-primary btn-user btn-block my-3" href="/Home/Nuevo">Nuevo</a>
+                            <table class="table table-bordered dataTable" style="width: 100%;">
+                                <thead>
+                                    <tr role="row">
+                                        
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>FechaNacimiento</th>
+                                        <th>Genero</th>
+                                        <th>Direccion</th>
+                                        <th>Telefono</th>
+                                        <th>Email</th>
+                                        <th>Fecha Inicio </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        
+                                        <td>Juan</td>
+                                        <td>Pérez</td>
+                                        <td>1990-05-15</td>
+                                        <td>Masculino</td>
+                                        <td>Calle Principal 123</td>
+                                        <td>123456789</td>
+                                        <td>juan@example.com</td>
+                                        <td>2023-01-01</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>María</td>
+                                        <td>Gómez</td>
+                                        <td>1985-09-20</td>
+                                        <td>Femenino</td>
+                                        <td>Avenida Secundaria 456</td>
+                                        <td>987654321</td>
+                                        <td>maria@example.com</td>
+                                        <td>2022-12-15</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>Luisa</td>
+                                        <td>Fernández</td>
+                                        <td>1982-07-10</td>
+                                        <td>Femenino</td>
+                                        <td>Av. Libertad 789</td>
+                                        <td>555-1234</td>
+                                        <td>luisa@example.com</td>
+                                        <td>2023-05-20</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
