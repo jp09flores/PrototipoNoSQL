@@ -73,6 +73,11 @@ namespace PrototipoNoSQL.Controllers
 
             return View();
         }
+        public ActionResult Clases()
+        {
 
+
+            return View();
+        }
     }
 }
