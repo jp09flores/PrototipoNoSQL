@@ -72,3 +72,9 @@ db.proveedores.insertOne({
   "telefono": "567890123",
   "email": "ejemplo@proveedor.com"
 });
+
+db.usuarios.insertOne({
+  "NombreUsuario": "admin",
+  "Password": "admin",
+  "Estado": true
+});
