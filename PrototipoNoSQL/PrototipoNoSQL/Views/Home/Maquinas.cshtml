@@ -3,5 +3,84 @@
     ViewBag.Title = "Maquinas";
 }
 
-<h2>Maquinas</h2>
+<div style="margin: 20px  50px ">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Productos</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12">
 
+
+                            <a class="btn btn-primary btn-user btn-block my-3" href="/Home/Nuevo">Nuevo</a>
+                            <table class="table table-bordered dataTable" style="width: 100%;">
+                                <thead>
+                                    <tr role="row">
+                                        <th>Nombre de la Máquina</th>
+                                        <th>Descripción</th>
+                                        <th>Estado</th>
+                                        <th>Metodos</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Press de pecho</td>
+                                        <td>Máquina diseñada para ejercitar los músculos pectorales mediante un movimiento de empuje hacia adelante con barras o manijas</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máquina de remo</td>
+                                        <td>Simulador de remo que proporciona un entrenamiento de cuerpo completo, trabajando varios grupos musculares a la vez</td>
+                                        <td>Fuera de servicio</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Máquina elíptica</td>
+                                        <td>Máquina de ejercicio que simula caminar, correr o subir escaleras sin poner demasiada presión en las articulaciones</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cinta de correr</td>
+                                        <td>Equipo diseñado para correr o caminar en un lugar, utilizado para el entrenamiento cardiovascular</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

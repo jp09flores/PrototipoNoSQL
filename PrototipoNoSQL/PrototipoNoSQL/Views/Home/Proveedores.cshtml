@@ -3,5 +3,102 @@
     ViewBag.Title = "Proveedores";
 }
 
-<h2>Proveedores</h2>
+<div style="margin: 20px  50px ">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Productos</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12">
 
+
+                            <a class="btn btn-primary btn-user btn-block my-3" href="/Home/Nuevo">Nuevo</a>
+                            <table class="table table-bordered dataTable" style="width: 100%;">
+                                <thead>
+                                    <tr role="row">
+                                        <th>Nombre del Proveedor</th>
+                                        <th>Dirección</th>
+                                        <th>Teléfono</th>
+                                        <th>Correo Electrónico</th>
+                                        <th>Metodos</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Fitness Distribuciones S.A</td>
+                                        <td>Calle del Ejercicio, 123, Ciudad Deportiva, CP 12345, Heredia</td>
+                                        <td>+1234567890</td>
+                                        <td>info@fitnessdistribuciones.com</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipamientos Fitness Extreme</td>
+                                        <td>Avenida del Deporte, 456, Barrio Atlético, CP 54321, Ciudad, San José</td>
+                                        <td>+0987654321</td>
+                                        <td>ventas@fitnessextreme.com</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>MuscleTech Supplies</td>
+                                        <td>Plaza del Entrenamiento, 789, Zona Muscular, CP 67890, Cartago</td>
+                                        <td>+1357924680</td>
+                                        <td>contacto@muscletechsupplies.com</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gym Equipment Innovations</td>
+                                        <td>Calle del Gimnasio, 987, Zona Fitness, CP 54321, Ciudad</td>
+                                        <td>+2468013579</td>
+                                        <td>info@gymequipmentinnovations.com</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cardio Solutions</td>
+                                        <td>Avenida de la Resistencia, 753, Centro Cardio, CP 34567, Alajuela</td>
+                                        <td>+9876543210</td>
+                                        <td>ventas@cardiosolutions.com</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

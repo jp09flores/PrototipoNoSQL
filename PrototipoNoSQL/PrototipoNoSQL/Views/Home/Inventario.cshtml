@@ -3,5 +3,114 @@
     ViewBag.Title = "Inventario";
 }
 
-<h2>Inventario</h2>
+<div style="margin: 20px  50px ">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Productos</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12">
 
+
+                            <a class="btn btn-primary btn-user btn-block my-3" href="/Home/Nuevo">Nuevo</a>
+                            <table class="table table-bordered dataTable" style="width: 100%;">
+                                <thead>
+                                    <tr role="row">
+                                        <th>ID</th>
+                                        <th>Nombre del Producto</th>
+                                        <th>Descripcion</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Estado</th>
+                                        <th>Metodos</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Pesas</td>
+                                        <td>Set de pesas de 10 kg</td>
+                                        <td>19.99</td>
+                                        <td>100</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Cuerda de saltar</td>
+                                        <td>Cuerda de saltar de alta velocidad</td>
+                                        <td>9.99</td>
+                                        <td>90</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Colchoneta</td>
+                                        <td>Colchoneta de yoga antideslizante</td>
+                                        <td>24.99</td>
+                                        <td>70</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Banco de pesas</td>
+                                        <td>Banco ajustable para levantamiento de pesas</td>
+                                        <td>149.99</td>
+                                        <td>25</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Barra olímpica</td>
+                                        <td>Barra de levantamiento olímpico de 20 kg</td>
+                                        <td>79.99</td>
+                                        <td>15</td>
+                                        <td>Disponible</td>
+                                        <td>
+                                            <a href="#ACTUALIZAR">Actualizar</a>
+                                            <form action="#ELIMINAR" method="post">
+                                                <input id="id" name="id" type="hidden" value="" />
+                                                <button type="submit" class="btn btn-link">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+<tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
